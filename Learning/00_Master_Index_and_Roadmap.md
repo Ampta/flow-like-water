@@ -179,3 +179,66 @@ Welcome to your complete, production-grade Core Java, Collections, Multithreadin
 - **Hardest Production Bug Solved:** Resolving concurrent database deadlocks via strict lock ordering and atomic decrements.
 - **Production Incident Management:** P1 outage triage, thread dump analysis with `jcmd`, and root cause analysis (RCA).
 - **Daily Agile Roles & Behavioral Answers:** Daily standups, BRD reviews, sprint cycles, and why you are switching jobs.
+
+---
+
+### 16. [Chapter 16: Angular Core Fundamentals, CLI & Template Bindings](file:///Users/apple/Workspace/Home/Javascript/Learning/16_Angular_Core_Fundamentals_and_Architecture.md)
+- **Features in Angular 7+:** Ivy compiler, Standalone Components, Typed Forms, Angular Signals, and modern control flow (`@if`, `@for`).
+- **Angular vs AngularJS:** MVC/Scope vs Component Tree, JS vs TypeScript, and change detection performance.
+- **TypeScript in Angular:** Static typing, decorator reflection, generics, and compile-time guarantees.
+- **Angular CLI Mastery:** Scaffolding, production builds (`ng build`), and automated migrations (`ng update`).
+- **Template Directives:** `*ngIf`, `*ngFor` with `trackBy`, and `[ngSwitch]` multi-branch workflows.
+- **Project Creation:** Monorepos, standalone application architecture, and SCSS setup.
+- **Components vs Directives vs Services:** Presentation vs DOM behavior vs domain logic.
+- **Interpolation & Property Binding:** Text nodes `{{ }}` vs DOM properties `[ ]` (preserving booleans and objects).
+- **Two-Way Data Binding:** `[(ngModel)]` de-sugaring into property and event bindings; custom banana-in-a-box components.
+- **Event & Attribute Binding:** User interactions `(click)` vs HTML attribute overrides (`[attr.colspan]`, ARIA tags).
+
+---
+
+### 17. [Chapter 17: Component Communication, Directives & Pipes](file:///Users/apple/Workspace/Home/Javascript/Learning/17_Angular_Component_Communication_Directives_and_Pipes.md)
+- **`@Input()` & `@Output()` Decorators:** Unidirectional data flow ("Data down, events up"), setter/getter interceptors, and modern Signal inputs (`input.required()`).
+- **Parent-Child Communication:** Template references (`#ref`), `@ViewChild` programmatic control, and shared singleton event buses.
+- **Structural vs Attribute Directives:** DOM layout destruction/instantiation (`*ngIf`) vs host behavior enhancement; why only one structural directive per element is allowed.
+- **`ngClass` vs `ngStyle`:** Class-based centralized CSS styling vs dynamic calculated runtime properties (progress bars).
+- **Pipes Architecture:** Built-in formatters, `AsyncPipe` memory leak prevention, and custom pure masking pipes (`maskSensitive`).
+
+---
+
+### 18. [Chapter 18: Services, Dependency Injection & Routing Architecture](file:///Users/apple/Workspace/Home/Javascript/Learning/18_Angular_Services_DI_and_Routing_Architecture.md)
+- **Services Architecture:** Single Responsibility Principle, separating business logic and API requests from UI components.
+- **Dependency Injection (DI) Internals:** Hierarchical injector resolution (Element, Environment, Root), tree-shaking with `providedIn: 'root'`, and multi-providers.
+- **Creating & Consuming Services:** Constructor injection vs modern `inject()` functional injection.
+- **Routing Configuration:** Route arrays, `<router-outlet>`, child routes, and modern `provideRouter()`.
+- **`RouterLink` vs `href`:** Instant client-side SPA state transitions vs full browser reloads and token erasure.
+- **Route Parameters:** Path params (`/loans/:id`), query params (`?status=val`), `history.state` data passing, and `withComponentInputBinding()`.
+- **Route Guards:** Functional `CanActivateFn`, `CanDeactivateFn` unsaved change warnings, `CanMatchFn`, and `ResolveFn` pre-fetching.
+
+---
+
+### 19. [Chapter 19: Forms, Validation & HTTP Client](file:///Users/apple/Workspace/Home/Javascript/Learning/19_Angular_Forms_Validation_and_HTTP_Client.md)
+- **Template-Driven vs Reactive Forms:** Asynchronous template parsing vs programmatic, strictly-typed model control.
+- **Form Validation Engine:** Built-in validators, custom synchronous validators, cross-field matching, and asynchronous debounce validators.
+- **Dynamic Form Fields with `FormArray`:** Adding and removing nested controls dynamically for co-borrowers and multi-bank accounts.
+- **HTTP Client Mechanics:** Typed GET & POST requests, query parameter encoding, custom headers, and file upload progress events.
+- **`HttpClientModule` vs `HttpModule`:** Automatic JSON deserialization, native interceptor pipelines, and `provideHttpClient(withFetch())`.
+- **HTTP Error Handling Architecture:** Centralized `HttpInterceptorFn`, retry strategies, and mapping backend 400 validation errors to form controls.
+
+---
+
+### 20. [Chapter 20: RxJS, Observables, State & Performance](file:///Users/apple/Workspace/Home/Javascript/Learning/20_Angular_RxJS_Observables_State_and_Performance.md)
+- **RxJS in Angular:** Reactive event streams, composable pipelines, and preventing race conditions via `switchMap`.
+- **Observables vs Promises:** Lazy vs eager execution, cancellation via unsubscribe, and stream processing.
+- **`BehaviorSubject` & State Management:** Storing current application state, multi-casting, and comparison with `Subject` and `ReplaySubject`.
+- **Angular Performance Optimization:** `ChangeDetectionStrategy.OnPush`, `NgZone.runOutsideAngular()`, deferrable views (`@defer`), and `NgOptimizedImage`.
+- **Lazy Loading Architecture:** Splitting bundles into asynchronous chunks via `loadComponent` and `PreloadAllModules`.
+- **Change Detection Internals:** Zone.js monkey-patching, event loop notifications, and component tree dirty checking.
+- **`OnPush` vs `Default` Strategy:** Pruning component subtrees, reference equality (`===`), and immutability rules.
+
+---
+
+### 21. [Chapter 21: Lifecycle Hooks, SSR Universal, Web Workers & Security](file:///Users/apple/Workspace/Home/Javascript/Learning/21_Angular_Lifecycle_Universal_Workers_and_Security.md)
+- **Component Lifecycle Hooks:** Full sequence from `constructor`, `ngOnChanges`, `ngOnInit`, `ngAfterViewInit` to `ngOnDestroy`.
+- **Angular Universal (SSR) & Hydration:** Server-side pre-rendering, SEO optimization, FCP acceleration, and non-destructive client hydration.
+- **Web Workers:** Offloading CPU-intensive calculations (amortization tables, 20,000-row statement parsing) to background threads.
+- **Enterprise Authentication & Authorization:** Complete JWT architecture, functional `authInterceptor`, role guards, and silent refresh token rotation.
